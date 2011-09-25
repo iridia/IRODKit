@@ -1,0 +1,9 @@
+[submodule "Externals/IRWebAPIKit"]
+	path = Externals/IRWebAPIKit
+	url = git://github.com/iridia/IRWebAPIKit.git
+[submodule "Externals/IRFoundations"]
+	path = Externals/IRFoundations
+	url = git://github.com/iridia/IRFoundations.git
+[submodule "Externals/JSONKit"]
+	path = Externals/JSONKit
+	url = git://github.com/johnezang/JSONKit.git
