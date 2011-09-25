@@ -7,7 +7,5 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface IRODKit : NSObject
-
-@end
+#import "IRFoundations.h"
+#import "IRWebAPIKit.h"

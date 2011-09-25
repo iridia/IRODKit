@@ -13,7 +13,71 @@
 		FFBD8738142F63EF0041DD1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFBD8736142F63EF0041DD1E /* InfoPlist.strings */; };
 		FFBD873A142F63EF0041DD1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD8739142F63EF0041DD1E /* main.m */; };
 		FFBD873E142F63EF0041DD1E /* IRODSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD873D142F63EF0041DD1E /* IRODSAppDelegate.m */; };
+		FFBD8757142F64820041DD1E /* libIRODKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD8754142F646F0041DD1E /* libIRODKit.a */; };
+		FFBD8793142F66110041DD1E /* libIRFoundationsTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD8783142F66030041DD1E /* libIRFoundationsTouch.a */; };
+		FFBD8794142F66110041DD1E /* libIRWebAPIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD878C142F66080041DD1E /* libIRWebAPIKit.a */; };
+		FFBD87D1142F71010041DD1E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD87D0142F71010041DD1E /* MobileCoreServices.framework */; };
+		FFBD87D4142F71450041DD1E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD87D3142F71450041DD1E /* JSONKit.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFBD8753142F646F0041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD874C142F646F0041DD1E /* IRODKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFBD870A142F63A90041DD1E;
+			remoteInfo = IRODKit;
+		};
+		FFBD8755142F64760041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD874C142F646F0041DD1E /* IRODKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FFBD8709142F63A90041DD1E;
+			remoteInfo = IRODKit;
+		};
+		FFBD8782142F66030041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD877D142F66030041DD1E /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF0A8BA91337AFB700DDA47C;
+			remoteInfo = IRFoundationsTouch;
+		};
+		FFBD8784142F66030041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD877D142F66030041DD1E /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFFDEF7014211BCC0083BEFB;
+			remoteInfo = IRFoundations;
+		};
+		FFBD878B142F66080041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8786142F66080041DD1E /* IRWebAPIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF7408241296A8D200571D46;
+			remoteInfo = IRWebAPIKit;
+		};
+		FFBD878D142F66080041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8786142F66080041DD1E /* IRWebAPIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF45627812D05708000239DC;
+			remoteInfo = IRWebAPIKitTest;
+		};
+		FFBD878F142F660E0041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD877D142F66030041DD1E /* IRFoundations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0A8BA81337AFB700DDA47C;
+			remoteInfo = IRFoundationsTouch;
+		};
+		FFBD8791142F660E0041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8786142F66080041DD1E /* IRWebAPIKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7408231296A8D200571D46;
+			remoteInfo = IRWebAPIKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FFBD8729142F63EF0041DD1E /* IRODKit-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IRODKit-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +90,12 @@
 		FFBD873B142F63EF0041DD1E /* IRODKit-Sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRODKit-Sample-Prefix.pch"; sourceTree = "<group>"; };
 		FFBD873C142F63EF0041DD1E /* IRODSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRODSAppDelegate.h; sourceTree = "<group>"; };
 		FFBD873D142F63EF0041DD1E /* IRODSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRODSAppDelegate.m; sourceTree = "<group>"; };
+		FFBD874C142F646F0041DD1E /* IRODKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = IRODKit.xcodeproj; sourceTree = "<group>"; };
+		FFBD877D142F66030041DD1E /* IRFoundations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRFoundations.xcodeproj; path = Externals/IRFoundations/IRFoundations/IRFoundations.xcodeproj; sourceTree = "<group>"; };
+		FFBD8786142F66080041DD1E /* IRWebAPIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRWebAPIKit.xcodeproj; path = Externals/IRWebAPIKit/IRWebAPIKit.xcodeproj; sourceTree = "<group>"; };
+		FFBD87D0142F71010041DD1E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FFBD87D2142F71450041DD1E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = Externals/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		FFBD87D3142F71450041DD1E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Externals/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +103,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBD8793142F66110041DD1E /* libIRFoundationsTouch.a in Frameworks */,
+				FFBD8794142F66110041DD1E /* libIRWebAPIKit.a in Frameworks */,
+				FFBD8757142F64820041DD1E /* libIRODKit.a in Frameworks */,
+				FFBD87D1142F71010041DD1E /* MobileCoreServices.framework in Frameworks */,
 				FFBD872E142F63EF0041DD1E /* UIKit.framework in Frameworks */,
 				FFBD8730142F63EF0041DD1E /* Foundation.framework in Frameworks */,
 				FFBD8732142F63EF0041DD1E /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +119,7 @@
 		FFBD871E142F63EF0041DD1E = {
 			isa = PBXGroup;
 			children = (
+				FFBD87D0142F71010041DD1E /* MobileCoreServices.framework */,
 				FFBD8733142F63EF0041DD1E /* IRODKit-Sample */,
 				FFBD872C142F63EF0041DD1E /* Frameworks */,
 				FFBD872A142F63EF0041DD1E /* Products */,
@@ -62,6 +137,11 @@
 		FFBD872C142F63EF0041DD1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFBD87D2142F71450041DD1E /* JSONKit.h */,
+				FFBD87D3142F71450041DD1E /* JSONKit.m */,
+				FFBD877D142F66030041DD1E /* IRFoundations.xcodeproj */,
+				FFBD8786142F66080041DD1E /* IRWebAPIKit.xcodeproj */,
+				FFBD874C142F646F0041DD1E /* IRODKit.xcodeproj */,
 				FFBD872D142F63EF0041DD1E /* UIKit.framework */,
 				FFBD872F142F63EF0041DD1E /* Foundation.framework */,
 				FFBD8731142F63EF0041DD1E /* CoreGraphics.framework */,
@@ -90,6 +170,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FFBD874D142F646F0041DD1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD8754142F646F0041DD1E /* libIRODKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFBD877E142F66030041DD1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD8783142F66030041DD1E /* libIRFoundationsTouch.a */,
+				FFBD8785142F66030041DD1E /* libIRFoundations.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFBD8787142F66080041DD1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD878C142F66080041DD1E /* libIRWebAPIKit.a */,
+				FFBD878E142F66080041DD1E /* IRWebAPIKitTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,6 +210,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				FFBD8790142F660E0041DD1E /* PBXTargetDependency */,
+				FFBD8792142F660E0041DD1E /* PBXTargetDependency */,
+				FFBD8756142F64760041DD1E /* PBXTargetDependency */,
 			);
 			name = "IRODKit-Sample";
 			productName = "IRODKit-Sample";
@@ -128,12 +237,64 @@
 			mainGroup = FFBD871E142F63EF0041DD1E;
 			productRefGroup = FFBD872A142F63EF0041DD1E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FFBD877E142F66030041DD1E /* Products */;
+					ProjectRef = FFBD877D142F66030041DD1E /* IRFoundations.xcodeproj */;
+				},
+				{
+					ProductGroup = FFBD874D142F646F0041DD1E /* Products */;
+					ProjectRef = FFBD874C142F646F0041DD1E /* IRODKit.xcodeproj */;
+				},
+				{
+					ProductGroup = FFBD8787142F66080041DD1E /* Products */;
+					ProjectRef = FFBD8786142F66080041DD1E /* IRWebAPIKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FFBD8728142F63EF0041DD1E /* IRODKit-Sample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FFBD8754142F646F0041DD1E /* libIRODKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRODKit.a;
+			remoteRef = FFBD8753142F646F0041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFBD8783142F66030041DD1E /* libIRFoundationsTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRFoundationsTouch.a;
+			remoteRef = FFBD8782142F66030041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFBD8785142F66030041DD1E /* libIRFoundations.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRFoundations.a;
+			remoteRef = FFBD8784142F66030041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFBD878C142F66080041DD1E /* libIRWebAPIKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRWebAPIKit.a;
+			remoteRef = FFBD878B142F66080041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFBD878E142F66080041DD1E /* IRWebAPIKitTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IRWebAPIKitTest.octest;
+			remoteRef = FFBD878D142F66080041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FFBD8727142F63EF0041DD1E /* Resources */ = {
@@ -153,10 +314,29 @@
 			files = (
 				FFBD873A142F63EF0041DD1E /* main.m in Sources */,
 				FFBD873E142F63EF0041DD1E /* IRODSAppDelegate.m in Sources */,
+				FFBD87D4142F71450041DD1E /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFBD8756142F64760041DD1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRODKit;
+			targetProxy = FFBD8755142F64760041DD1E /* PBXContainerItemProxy */;
+		};
+		FFBD8790142F660E0041DD1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRFoundationsTouch;
+			targetProxy = FFBD878F142F660E0041DD1E /* PBXContainerItemProxy */;
+		};
+		FFBD8792142F660E0041DD1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRWebAPIKit;
+			targetProxy = FFBD8791142F660E0041DD1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FFBD8736142F63EF0041DD1E /* InfoPlist.strings */ = {
@@ -189,6 +369,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Externals/IRWebAPIKit",
+					"$(PROJECT_DIR)/IRODKit",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos4.3;
 			};
@@ -206,6 +390,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Externals/IRWebAPIKit",
+					"$(PROJECT_DIR)/IRODKit",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos4.3;

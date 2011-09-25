@@ -8,15 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		FFBD870E142F63A90041DD1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD870D142F63A90041DD1E /* Foundation.framework */; };
-		FFBD8714142F63A90041DD1E /* IRODKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD8713142F63A90041DD1E /* IRODKit.m */; };
+		FFBD8779142F655A0041DD1E /* IRODInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD8777142F655A0041DD1E /* IRODInterface.h */; };
+		FFBD877A142F655A0041DD1E /* IRODInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD8778142F655A0041DD1E /* IRODInterface.m */; };
+		FFBD877B142F65EA0041DD1E /* libIRFoundationsTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD876E142F65260041DD1E /* libIRFoundationsTouch.a */; };
+		FFBD877C142F65EA0041DD1E /* libIRWebAPIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD8762142F651D0041DD1E /* libIRWebAPIKit.a */; };
+		FFBD87CE142F6E330041DD1E /* IRODFeedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD87CC142F6E330041DD1E /* IRODFeedViewController.h */; };
+		FFBD87CF142F6E330041DD1E /* IRODFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD87CD142F6E330041DD1E /* IRODFeedViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFBD8761142F651D0041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8759142F651D0041DD1E /* IRWebAPIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF7408241296A8D200571D46;
+			remoteInfo = IRWebAPIKit;
+		};
+		FFBD8763142F651D0041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8759142F651D0041DD1E /* IRWebAPIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF45627812D05708000239DC;
+			remoteInfo = IRWebAPIKitTest;
+		};
+		FFBD876D142F65260041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8765142F65260041DD1E /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF0A8BA91337AFB700DDA47C;
+			remoteInfo = IRFoundationsTouch;
+		};
+		FFBD876F142F65260041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8765142F65260041DD1E /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFFDEF7014211BCC0083BEFB;
+			remoteInfo = IRFoundations;
+		};
+		FFBD8771142F652D0041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8765142F65260041DD1E /* IRFoundations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0A8BA81337AFB700DDA47C;
+			remoteInfo = IRFoundationsTouch;
+		};
+		FFBD8773142F652D0041DD1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFBD8759142F651D0041DD1E /* IRWebAPIKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7408231296A8D200571D46;
+			remoteInfo = IRWebAPIKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FFBD870A142F63A90041DD1E /* libIRODKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIRODKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBD870D142F63A90041DD1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FFBD8711142F63A90041DD1E /* IRODKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRODKit-Prefix.pch"; sourceTree = "<group>"; };
 		FFBD8712142F63A90041DD1E /* IRODKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRODKit.h; sourceTree = "<group>"; };
-		FFBD8713142F63A90041DD1E /* IRODKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRODKit.m; sourceTree = "<group>"; };
+		FFBD8759142F651D0041DD1E /* IRWebAPIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRWebAPIKit.xcodeproj; path = Externals/IRWebAPIKit/IRWebAPIKit.xcodeproj; sourceTree = "<group>"; };
+		FFBD8765142F65260041DD1E /* IRFoundations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRFoundations.xcodeproj; path = Externals/IRFoundations/IRFoundations/IRFoundations.xcodeproj; sourceTree = "<group>"; };
+		FFBD8777142F655A0041DD1E /* IRODInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRODInterface.h; sourceTree = "<group>"; };
+		FFBD8778142F655A0041DD1E /* IRODInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRODInterface.m; sourceTree = "<group>"; };
+		FFBD87CC142F6E330041DD1E /* IRODFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRODFeedViewController.h; sourceTree = "<group>"; };
+		FFBD87CD142F6E330041DD1E /* IRODFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRODFeedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBD877B142F65EA0041DD1E /* libIRFoundationsTouch.a in Frameworks */,
+				FFBD877C142F65EA0041DD1E /* libIRWebAPIKit.a in Frameworks */,
 				FFBD870E142F63A90041DD1E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +108,8 @@
 		FFBD870C142F63A90041DD1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFBD8765142F65260041DD1E /* IRFoundations.xcodeproj */,
+				FFBD8759142F651D0041DD1E /* IRWebAPIKit.xcodeproj */,
 				FFBD870D142F63A90041DD1E /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -60,7 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				FFBD8712142F63A90041DD1E /* IRODKit.h */,
-				FFBD8713142F63A90041DD1E /* IRODKit.m */,
+				FFBD8777142F655A0041DD1E /* IRODInterface.h */,
+				FFBD8778142F655A0041DD1E /* IRODInterface.m */,
+				FFBD87CC142F6E330041DD1E /* IRODFeedViewController.h */,
+				FFBD87CD142F6E330041DD1E /* IRODFeedViewController.m */,
 				FFBD8710142F63A90041DD1E /* Supporting Files */,
 			);
 			path = IRODKit;
@@ -74,6 +136,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FFBD875A142F651D0041DD1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD8762142F651D0041DD1E /* libIRWebAPIKit.a */,
+				FFBD8764142F651D0041DD1E /* IRWebAPIKitTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFBD8766142F65260041DD1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD876E142F65260041DD1E /* libIRFoundationsTouch.a */,
+				FFBD8770142F65260041DD1E /* libIRFoundations.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -81,6 +161,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBD8779142F655A0041DD1E /* IRODInterface.h in Headers */,
+				FFBD87CE142F6E330041DD1E /* IRODFeedViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +180,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				FFBD8772142F652D0041DD1E /* PBXTargetDependency */,
+				FFBD8774142F652D0041DD1E /* PBXTargetDependency */,
 			);
 			name = IRODKit;
 			productName = IRODKit;
@@ -122,6 +206,16 @@
 			mainGroup = FFBD86FF142F63A90041DD1E;
 			productRefGroup = FFBD870B142F63A90041DD1E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FFBD8766142F65260041DD1E /* Products */;
+					ProjectRef = FFBD8765142F65260041DD1E /* IRFoundations.xcodeproj */;
+				},
+				{
+					ProductGroup = FFBD875A142F651D0041DD1E /* Products */;
+					ProjectRef = FFBD8759142F651D0041DD1E /* IRWebAPIKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FFBD8709142F63A90041DD1E /* IRODKit */,
@@ -129,16 +223,61 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		FFBD8762142F651D0041DD1E /* libIRWebAPIKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRWebAPIKit.a;
+			remoteRef = FFBD8761142F651D0041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFBD8764142F651D0041DD1E /* IRWebAPIKitTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IRWebAPIKitTest.octest;
+			remoteRef = FFBD8763142F651D0041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFBD876E142F65260041DD1E /* libIRFoundationsTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRFoundationsTouch.a;
+			remoteRef = FFBD876D142F65260041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFBD8770142F65260041DD1E /* libIRFoundations.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRFoundations.a;
+			remoteRef = FFBD876F142F65260041DD1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FFBD8706142F63A90041DD1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBD8714142F63A90041DD1E /* IRODKit.m in Sources */,
+				FFBD877A142F655A0041DD1E /* IRODInterface.m in Sources */,
+				FFBD87CF142F6E330041DD1E /* IRODFeedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFBD8772142F652D0041DD1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRFoundationsTouch;
+			targetProxy = FFBD8771142F652D0041DD1E /* PBXContainerItemProxy */;
+		};
+		FFBD8774142F652D0041DD1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRWebAPIKit;
+			targetProxy = FFBD8773142F652D0041DD1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FFBD8715142F63A90041DD1E /* Debug */ = {
@@ -159,6 +298,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Externals/IRWebAPIKit";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos4.3;
 			};
@@ -175,6 +315,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Externals/IRWebAPIKit";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos4.3;
 				VALIDATE_PRODUCT = YES;
@@ -187,7 +328,10 @@
 				DSTROOT = /tmp/IRODKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IRODKit/IRODKit-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -199,7 +343,10 @@
 				DSTROOT = /tmp/IRODKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IRODKit/IRODKit-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
