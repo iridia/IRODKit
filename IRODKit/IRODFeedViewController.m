@@ -17,10 +17,6 @@
 @property (nonatomic, readwrite, retain) NSDate *lastRefreshDate;
 @property (nonatomic, readwrite, assign) NSTimeInterval refreshInterval;
 
-- (void) refreshDataIfNecessary;
-- (void) refreshData;
-- (void) didLoadRemoteData:(NSDictionary *)incomingData;
-
 @end
 
 
@@ -63,11 +59,19 @@
 	self.lastRefreshDate = [NSDate date];
 	[self.odInterface performQuery:self.odQuery onSuccess: ^ (NSDictionary *results) {
 	
-		[self didLoadRemoteData:results];
+		dispatch_async(dispatch_get_main_queue(), ^ {
+			
+			[self didLoadRemoteData:results];
+			
+		});
 		
 	} onFailure: ^ (NSError *error) {
 	
-		[[[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
+		dispatch_async(dispatch_get_main_queue(), ^ {
+
+			[[[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
+		
+		});
 		
 	}];
 

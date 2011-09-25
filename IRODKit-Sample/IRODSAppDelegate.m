@@ -8,7 +8,7 @@
 
 #import "IRODSAppDelegate.h"
 #import "IRODInterface.h"
-#import "IRODFeedViewController.h"
+#import "IRODFeedTableViewController.h"
 
 @implementation IRODSAppDelegate
 
@@ -30,7 +30,7 @@
 	NSDictionary *odQuery = nil;
 	
 	IRODInterface *feedInterface = [IRODInterface interfaceForBaseURL:odBaseURL container:odContainer dataset:odDataset];
-	IRODFeedViewController *feedVC = [[[IRODFeedViewController alloc] initWithInterface:feedInterface query:odQuery] autorelease];
+	IRODFeedViewController *feedVC = [[[IRODFeedTableViewController alloc] initWithInterface:feedInterface query:odQuery] autorelease];
 	self.window.rootViewController = feedVC;
 	
 	return YES;

@@ -19,4 +19,8 @@
 @property (nonatomic, readonly, retain) IRODInterface *odInterface;
 @property (nonatomic, readonly, retain) NSDictionary *odQuery;
 
+- (void) refreshDataIfNecessary;
+- (void) refreshData;
+- (void) didLoadRemoteData:(NSDictionary *)incomingData;
+
 @end
