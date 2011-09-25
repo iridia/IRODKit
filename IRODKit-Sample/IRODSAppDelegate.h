@@ -10,6 +10,6 @@
 
 @interface IRODSAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, readwrite, retain) UIWindow *window;
 
 @end

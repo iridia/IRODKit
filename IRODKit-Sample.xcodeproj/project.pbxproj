@@ -119,7 +119,6 @@
 		FFBD871E142F63EF0041DD1E = {
 			isa = PBXGroup;
 			children = (
-				FFBD87D0142F71010041DD1E /* MobileCoreServices.framework */,
 				FFBD8733142F63EF0041DD1E /* IRODKit-Sample */,
 				FFBD872C142F63EF0041DD1E /* Frameworks */,
 				FFBD872A142F63EF0041DD1E /* Products */,
@@ -145,6 +144,7 @@
 				FFBD872D142F63EF0041DD1E /* UIKit.framework */,
 				FFBD872F142F63EF0041DD1E /* Foundation.framework */,
 				FFBD8731142F63EF0041DD1E /* CoreGraphics.framework */,
+				FFBD87D0142F71010041DD1E /* MobileCoreServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
