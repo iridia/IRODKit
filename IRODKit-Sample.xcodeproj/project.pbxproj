@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFBD872E142F63EF0041DD1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD872D142F63EF0041DD1E /* UIKit.framework */; };
+		FFBD8730142F63EF0041DD1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD872F142F63EF0041DD1E /* Foundation.framework */; };
+		FFBD8732142F63EF0041DD1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBD8731142F63EF0041DD1E /* CoreGraphics.framework */; };
+		FFBD8738142F63EF0041DD1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFBD8736142F63EF0041DD1E /* InfoPlist.strings */; };
+		FFBD873A142F63EF0041DD1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD8739142F63EF0041DD1E /* main.m */; };
+		FFBD873E142F63EF0041DD1E /* IRODSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD873D142F63EF0041DD1E /* IRODSAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFBD8729142F63EF0041DD1E /* IRODKit-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IRODKit-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBD872D142F63EF0041DD1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFBD872F142F63EF0041DD1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFBD8731142F63EF0041DD1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFBD8735142F63EF0041DD1E /* IRODKit-Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IRODKit-Sample-Info.plist"; sourceTree = "<group>"; };
+		FFBD8737142F63EF0041DD1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFBD8739142F63EF0041DD1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFBD873B142F63EF0041DD1E /* IRODKit-Sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRODKit-Sample-Prefix.pch"; sourceTree = "<group>"; };
+		FFBD873C142F63EF0041DD1E /* IRODSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRODSAppDelegate.h; sourceTree = "<group>"; };
+		FFBD873D142F63EF0041DD1E /* IRODSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRODSAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFBD8726142F63EF0041DD1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBD872E142F63EF0041DD1E /* UIKit.framework in Frameworks */,
+				FFBD8730142F63EF0041DD1E /* Foundation.framework in Frameworks */,
+				FFBD8732142F63EF0041DD1E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFBD871E142F63EF0041DD1E = {
+			isa = PBXGroup;
+			children = (
+				FFBD8733142F63EF0041DD1E /* IRODKit-Sample */,
+				FFBD872C142F63EF0041DD1E /* Frameworks */,
+				FFBD872A142F63EF0041DD1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFBD872A142F63EF0041DD1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD8729142F63EF0041DD1E /* IRODKit-Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFBD872C142F63EF0041DD1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD872D142F63EF0041DD1E /* UIKit.framework */,
+				FFBD872F142F63EF0041DD1E /* Foundation.framework */,
+				FFBD8731142F63EF0041DD1E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFBD8733142F63EF0041DD1E /* IRODKit-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD873C142F63EF0041DD1E /* IRODSAppDelegate.h */,
+				FFBD873D142F63EF0041DD1E /* IRODSAppDelegate.m */,
+				FFBD8734142F63EF0041DD1E /* Supporting Files */,
+			);
+			path = "IRODKit-Sample";
+			sourceTree = "<group>";
+		};
+		FFBD8734142F63EF0041DD1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD8735142F63EF0041DD1E /* IRODKit-Sample-Info.plist */,
+				FFBD8736142F63EF0041DD1E /* InfoPlist.strings */,
+				FFBD8739142F63EF0041DD1E /* main.m */,
+				FFBD873B142F63EF0041DD1E /* IRODKit-Sample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFBD8728142F63EF0041DD1E /* IRODKit-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFBD8741142F63EF0041DD1E /* Build configuration list for PBXNativeTarget "IRODKit-Sample" */;
+			buildPhases = (
+				FFBD8725142F63EF0041DD1E /* Sources */,
+				FFBD8726142F63EF0041DD1E /* Frameworks */,
+				FFBD8727142F63EF0041DD1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IRODKit-Sample";
+			productName = "IRODKit-Sample";
+			productReference = FFBD8729142F63EF0041DD1E /* IRODKit-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFBD8720142F63EF0041DD1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Iridia Productions";
+			};
+			buildConfigurationList = FFBD8723142F63EF0041DD1E /* Build configuration list for PBXProject "IRODKit-Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFBD871E142F63EF0041DD1E;
+			productRefGroup = FFBD872A142F63EF0041DD1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFBD8728142F63EF0041DD1E /* IRODKit-Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFBD8727142F63EF0041DD1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBD8738142F63EF0041DD1E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFBD8725142F63EF0041DD1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBD873A142F63EF0041DD1E /* main.m in Sources */,
+				FFBD873E142F63EF0041DD1E /* IRODSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFBD8736142F63EF0041DD1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFBD8737142F63EF0041DD1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFBD873F142F63EF0041DD1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos4.3;
+			};
+			name = Debug;
+		};
+		FFBD8740142F63EF0041DD1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos4.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFBD8742142F63EF0041DD1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRODKit-Sample/IRODKit-Sample-Prefix.pch";
+				INFOPLIST_FILE = "IRODKit-Sample/IRODKit-Sample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFBD8743142F63EF0041DD1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IRODKit-Sample/IRODKit-Sample-Prefix.pch";
+				INFOPLIST_FILE = "IRODKit-Sample/IRODKit-Sample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFBD8723142F63EF0041DD1E /* Build configuration list for PBXProject "IRODKit-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBD873F142F63EF0041DD1E /* Debug */,
+				FFBD8740142F63EF0041DD1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFBD8741142F63EF0041DD1E /* Build configuration list for PBXNativeTarget "IRODKit-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBD8742142F63EF0041DD1E /* Debug */,
+				FFBD8743142F63EF0041DD1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFBD8720142F63EF0041DD1E /* Project object */;
+}
