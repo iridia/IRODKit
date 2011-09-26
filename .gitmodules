@@ -7,3 +7,6 @@
 [submodule "Externals/JSONKit"]
 	path = Externals/JSONKit
 	url = git://github.com/johnezang/JSONKit.git
+[submodule "Externals/TouchXML"]
+	path = Externals/TouchXML
+	url = git://github.com/TouchCode/TouchXML.git
