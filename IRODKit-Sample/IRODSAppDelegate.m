@@ -33,8 +33,6 @@
 	listingVC.title = @"Everything";
 	listingVC.onSelection = ^ (NSIndexPath *indexPath, NSString *key, NSString *value) {
 	
-		NSLog(@"selected %@, %@, %@", indexPath, key, value);
-
 		IRODInterface *feedInterface = [IRODInterface interfaceForBaseURL:odBaseURL container:odContainer dataset:key];
 		IRODFeedTableViewController *feedVC = [[[IRODFeedTableViewController alloc] initWithInterface:feedInterface query:nil] autorelease];
 		feedVC.title = key;
