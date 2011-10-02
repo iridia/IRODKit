@@ -16,6 +16,8 @@
 		FFBD87CF142F6E330041DD1E /* IRODFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD87CD142F6E330041DD1E /* IRODFeedViewController.m */; };
 		FFBD87D7142F748E0041DD1E /* IRODFeedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBD87D5142F748E0041DD1E /* IRODFeedTableViewController.h */; };
 		FFBD87D8142F748E0041DD1E /* IRODFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD87D6142F748E0041DD1E /* IRODFeedTableViewController.m */; };
+		FFDE86371438E4E1009E04D9 /* IRODCatalogTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDE86351438E4E1009E04D9 /* IRODCatalogTableViewController.h */; };
+		FFDE86381438E4E1009E04D9 /* IRODCatalogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE86361438E4E1009E04D9 /* IRODCatalogTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		FFBD87CD142F6E330041DD1E /* IRODFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRODFeedViewController.m; sourceTree = "<group>"; };
 		FFBD87D5142F748E0041DD1E /* IRODFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRODFeedTableViewController.h; sourceTree = "<group>"; };
 		FFBD87D6142F748E0041DD1E /* IRODFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRODFeedTableViewController.m; sourceTree = "<group>"; };
+		FFDE86351438E4E1009E04D9 /* IRODCatalogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRODCatalogTableViewController.h; sourceTree = "<group>"; };
+		FFDE86361438E4E1009E04D9 /* IRODCatalogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRODCatalogTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				FFBD87CD142F6E330041DD1E /* IRODFeedViewController.m */,
 				FFBD87D5142F748E0041DD1E /* IRODFeedTableViewController.h */,
 				FFBD87D6142F748E0041DD1E /* IRODFeedTableViewController.m */,
+				FFDE86351438E4E1009E04D9 /* IRODCatalogTableViewController.h */,
+				FFDE86361438E4E1009E04D9 /* IRODCatalogTableViewController.m */,
 				FFBD8710142F63A90041DD1E /* Supporting Files */,
 			);
 			path = IRODKit;
@@ -170,6 +176,7 @@
 				FFBD8779142F655A0041DD1E /* IRODInterface.h in Headers */,
 				FFBD87CE142F6E330041DD1E /* IRODFeedViewController.h in Headers */,
 				FFBD87D7142F748E0041DD1E /* IRODFeedTableViewController.h in Headers */,
+				FFDE86371438E4E1009E04D9 /* IRODCatalogTableViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +276,7 @@
 				FFBD877A142F655A0041DD1E /* IRODInterface.m in Sources */,
 				FFBD87CF142F6E330041DD1E /* IRODFeedViewController.m in Sources */,
 				FFBD87D8142F748E0041DD1E /* IRODFeedTableViewController.m in Sources */,
+				FFDE86381438E4E1009E04D9 /* IRODCatalogTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
