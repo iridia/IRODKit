@@ -69,7 +69,7 @@
 	
 		dispatch_async(dispatch_get_main_queue(), ^ {
 
-			[[[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
+			[self didFailLoadingRemoteDataWithError:error];
 		
 		});
 		
@@ -80,6 +80,12 @@
 - (void) didLoadRemoteData:(NSDictionary *)incomingData {
 
 	NSLog(@"%s Requires Concrete Implementation.", __PRETTY_FUNCTION__);
+
+}
+
+- (void) didFailLoadingRemoteDataWithError:(NSError *)error {
+
+	[[[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease] show];
 
 }
 

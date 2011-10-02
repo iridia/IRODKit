@@ -22,5 +22,6 @@
 - (void) refreshDataIfNecessary;
 - (void) refreshData;
 - (void) didLoadRemoteData:(NSDictionary *)incomingData;
+- (void) didFailLoadingRemoteDataWithError:(NSError *)error;
 
 @end
