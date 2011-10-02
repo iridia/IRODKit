@@ -27,11 +27,20 @@
 	NSURL *odBaseURL = [NSURL URLWithString:@"http://taipeicityopendata.cloudapp.net/v1/"];
 	NSString *odContainer = @"TaipeiOGDI";
 	NSString *odDataset = @"G67ACUOLDTREE0501";
-	NSDictionary *odQuery = nil;
+	//	NSDictionary *odQuery = nil;
 	
 	IRODInterface *feedInterface = [IRODInterface interfaceForBaseURL:odBaseURL container:odContainer dataset:odDataset];
-	IRODFeedViewController *feedVC = [[[IRODFeedTableViewController alloc] initWithInterface:feedInterface query:odQuery] autorelease];
-	self.window.rootViewController = feedVC;
+	
+	[feedInterface retrieveDatasetNamesOnSuccess:^(NSArray *names) {
+		
+		NSLog(@"nam %@", names);
+		
+	} onFailure:^(NSError *error) {
+		
+	}];
+	
+	//	IRODFeedViewController *feedVC = [[[IRODFeedTableViewController alloc] initWithInterface:feedInterface query:odQuery] autorelease];
+	//	self.window.rootViewController = feedVC;
 	
 	return YES;
 }
