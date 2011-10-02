@@ -306,7 +306,11 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Externals/IRWebAPIKit";
+				HEADER_SEARCH_PATHS = (
+					"\"${SDK_DIR}\"/usr/include/libxml2",
+					"$(PROJECT_DIR)/Externals/IRWebAPIKit",
+					"$(PROJECT_DIR)/Externals/TouchXML/Source/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos4.3;
 			};
@@ -323,7 +327,11 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Externals/IRWebAPIKit";
+				HEADER_SEARCH_PATHS = (
+					"\"${SDK_DIR}\"/usr/include/libxml2",
+					"$(PROJECT_DIR)/Externals/IRWebAPIKit",
+					"$(PROJECT_DIR)/Externals/TouchXML/Source/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos4.3;
 				VALIDATE_PRODUCT = YES;
