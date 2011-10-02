@@ -7,6 +7,7 @@
 //
 
 #import "IRODInterface.h"
+#import "TouchXML.h"
 
 @interface IRODInterface ()
 @property (nonatomic, readwrite, retain) NSString *containerName;
@@ -28,6 +29,40 @@
 	returnedInstance.datasetName = inDatasetName;
 	
 	return returnedInstance;
+
+}
+
+- (void) retrieveDatasetNamesOnSuccess:(void(^)(NSArray *names))successBlock onFailure:(void(^)(NSError *error))failureBlock {
+
+	[self.engine fireAPIRequestNamed:self.containerName withArguments:nil options:[NSDictionary dictionaryWithObjectsAndKeys:
+	
+		IRWebAPIResponseDefaultXMLParserMake(), kIRWebAPIEngineParser,
+	
+	nil] successHandler: ^ (NSDictionary *inResponseOrNil, NSDictionary *inResponseContext, BOOL *outNotifyDelegate, BOOL *outShouldRetry) {
+	
+		if (!successBlock)
+			return;
+	
+		CXMLDocument *document = [inResponseOrNil objectForKey:@"object"];
+		NSArray *allNodes = [[document rootElement] nodesForXPath:@"//app:service/app:workspace/app:collection/atom:title" namespaceMappings:[NSDictionary dictionaryWithObjectsAndKeys:
+			@"http://www.w3.org/2005/Atom", @"atom",
+			@"http://www.w3.org/2007/app", @"app",
+		nil] error:nil];
+		
+		NSMutableArray *returnedTitles = [NSMutableArray arrayWithCapacity:[allNodes count]];
+		
+		for (CXMLElement *aTitleNode in allNodes) {
+			[returnedTitles addObject:[aTitleNode stringValue]];
+		};
+		
+		successBlock(returnedTitles);
+		
+	} failureHandler: ^ (NSDictionary *inResponseOrNil, NSDictionary *inResponseContext, BOOL *outNotifyDelegate, BOOL *outShouldRetry) {
+	
+		if (failureBlock)
+			failureBlock(nil);
+		
+	}];
 
 }
 
