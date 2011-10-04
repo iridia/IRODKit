@@ -14,7 +14,7 @@
 //	The feed view controller is a generic and overridable view controller subclass integrating IRODInterface and friends
 //	It provides contrsucts showing contents from a generic OData Protocol feed in the view
 
-- (id) initWithInterface:(IRODInterface *)inteface query:(NSDictionary *)query;
+- (id) initWithInterface:(IRODInterface *)interface query:(NSDictionary *)query;
 
 @property (nonatomic, readonly, retain) IRODInterface *odInterface;
 @property (nonatomic, readonly, retain) NSDictionary *odQuery;
@@ -22,5 +22,6 @@
 - (void) refreshDataIfNecessary;
 - (void) refreshData;
 - (void) didLoadRemoteData:(NSDictionary *)incomingData;
+- (void) didFailLoadingRemoteDataWithError:(NSError *)error;
 
 @end

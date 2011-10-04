@@ -12,7 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([IRODSAppDelegate class]));
-	}
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	int returnCode = UIApplicationMain(argc, argv, nil, NSStringFromClass([IRODSAppDelegate class]));
+	[pool drain];
+	return returnCode;
 }

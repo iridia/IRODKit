@@ -18,10 +18,12 @@
 
 @implementation IRODFeedTableViewController
 @synthesize storedRemoteResponse;
+@synthesize onSelection;
 
 - (void) dealloc {
 
 	[storedRemoteResponse release];
+	[onSelection release];
 	[super dealloc];
 
 }
@@ -81,6 +83,17 @@
 	cell.detailTextLabel.text = itemElementValue;
 		
 	return cell;
+
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	NSDictionary *itemDictionary = [self.storedRemoteResponse objectAtIndex:indexPath.section];
+	NSString *itemElementKey = [[itemDictionary allKeys] objectAtIndex:indexPath.row];
+	NSString *itemElementValue = [itemDictionary objectForKey:itemElementKey];
+
+	if (self.onSelection)
+		self.onSelection(indexPath, itemElementKey, itemElementValue);
 
 }
 

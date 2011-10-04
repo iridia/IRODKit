@@ -11,5 +11,6 @@
 @interface IRODFeedTableViewController : IRODFeedViewController
 
 @property (nonatomic, readonly, retain) UITableView *tableView;
+@property (nonatomic, readwrite, copy) void (^onSelection)(NSIndexPath *rowIndexPath, NSString *selectedKey, NSString *selectedValue);
 
 @end
